@@ -1,0 +1,49 @@
+.article-form {
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-lg);
+  padding: 2rem;
+}
+
+.article-form .form-header {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.article-form .form-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: var(--text-dark);
+}
+
+.article-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.article-form textarea {
+  min-height: 12rem;
+}
+
+.article-form .form-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.article-form .cancel-button {
+  background: #f3f4f6;
+  color: var(--text-dark);
+}
+
+.article-form .cancel-button:hover {
+  background: #e5e7eb;
+}
+
+.article-form .submit-button {
+  min-width: 8rem;
+}

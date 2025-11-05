@@ -1,0 +1,28 @@
+.error-message {
+  background-color: #fee2e2;
+  border: 1px solid #fca5a5;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.error-content {
+  display: flex;
+  align-items: center;
+}
+
+.error-icon {
+  flex-shrink: 0;
+  margin-right: 0.75rem;
+}
+
+.error-icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #dc2626;
+}
+
+.error-text {
+  color: #991b1b;
+  font-size: 0.875rem;
+}

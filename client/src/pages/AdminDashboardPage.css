@@ -1,0 +1,5 @@
+.admin-dashboard-page {
+  padding: 2rem 0;
+  min-height: calc(100vh - 4rem);
+  background: #f9fafb;
+}

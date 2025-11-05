@@ -1,0 +1,117 @@
+.article-detail {
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+.article-detail .article-content-wrapper {
+  padding: 2rem 1.5rem;
+}
+
+.article-detail header {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1.5rem;
+}
+
+.article-detail .article-badge {
+  display: inline-block;
+  background-color: #dbeafe;
+  color: #1e40af;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.25rem 1rem;
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+}
+
+.article-detail .article-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.article-detail .article-meta {
+  display: flex;
+  align-items: center;
+  color: var(--text-gray);
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.article-detail .meta-item {
+  display: flex;
+  align-items: center;
+}
+
+.article-detail .meta-item svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+.article-detail .article-body {
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.article-detail .article-body p {
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.article-detail footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.article-detail .last-updated {
+  font-size: 0.875rem;
+  color: var(--text-light);
+}
+
+.article-detail .article-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.article-detail .action-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  color: var(--text-gray);
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s;
+  font-size: 0.875rem;
+}
+
+.article-detail .action-button:hover {
+  color: var(--primary-color);
+}
+
+.article-detail .action-button svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .article-detail .article-content-wrapper {
+    padding: 3rem 2.5rem;
+  }
+  
+  .article-detail .article-title {
+    font-size: 3rem;
+  }
+}

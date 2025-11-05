@@ -1,0 +1,148 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-md);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.dashboard-header h1 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: var(--text-dark);
+}
+
+.dashboard-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.dashboard-content {
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+.dashboard-table-wrapper {
+  overflow-x: auto;
+}
+
+.dashboard table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dashboard th,
+.dashboard td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.dashboard th {
+  background: #f9fafb;
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.dashboard td {
+  color: var(--text-gray);
+}
+
+.dashboard tbody tr {
+  transition: background 0.15s;
+}
+
+.dashboard tbody tr:hover {
+  background: #f9fafb;
+}
+
+.dashboard .article-title-cell {
+  font-weight: 600;
+  color: var(--text-dark);
+  max-width: 20rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dashboard .article-category {
+  display: inline-block;
+  background-color: #dbeafe;
+  color: #1e40af;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+}
+
+.dashboard .table-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dashboard .icon-button {
+  padding: 0.5rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 0.375rem;
+}
+
+.dashboard .icon-button:hover {
+  background: #f3f4f6;
+}
+
+.dashboard .icon-button svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.dashboard .edit-button {
+  color: #2563eb;
+}
+
+.dashboard .edit-button:hover {
+  color: #1d4ed8;
+}
+
+.dashboard .delete-button {
+  color: #dc2626;
+}
+
+.dashboard .delete-button:hover {
+  color: #b91c1c;
+}
+
+.no-articles-message {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.no-articles-message p {
+  color: var(--text-gray);
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .dashboard .article-title-cell {
+    max-width: 12rem;
+  }
+}
