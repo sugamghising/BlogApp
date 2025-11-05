@@ -89,6 +89,9 @@ SESSION_SECRET=your-super-secure-random-secret-key-here
 # MongoDB Connection (required)
 MONGO_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<database>?retryWrites=true&w=majority
 
+# Frontend URL (for CORS configuration)
+FRONTEND_URL=http://localhost:3000
+
 # Admin Credentials (for initial setup)
 ADMIN_USERNAME=admin
 ADMIN_PASSWORD=admin123
@@ -98,6 +101,7 @@ ADMIN_PASSWORD=admin123
 
 - Replace `<username>`, `<password>`, `<cluster>`, and `<database>` with your MongoDB credentials
 - Generate a strong `SESSION_SECRET` (32+ characters recommended)
+- Update `FRONTEND_URL` if deploying to production (e.g., https://yourdomain.com)
 - Change default admin credentials after first login
 
 #### Start the Backend Server
