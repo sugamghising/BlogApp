@@ -21,10 +21,12 @@ if (!mongoUrl) {
   throw new Error('MONGO_URI is not set in environment variables');
 }
 
+const FRONTEND_URL = process.env.FRONTEND_URL || 'http://localhost:3000';
+
 //middleware
 app.use(helmet());
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: FRONTEND_URL,
   credentials: true
 }));
 app.use(express.json())
